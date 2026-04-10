@@ -10,7 +10,7 @@ import anthropic
 import requests
  
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins="*", supports_credentials=False)
  
 VENDORS = {
     "kss": {"name": "KSS", "email": "kennettspec.sales2@gmail.com"},
